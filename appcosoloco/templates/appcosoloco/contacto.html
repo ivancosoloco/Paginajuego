@@ -1,0 +1,130 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INFERNO - Equipo & Contacto</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;900&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- CSS Personalizado -->
+    <link rel="stylesheet" href="{% static 'appcosoloco/recursos/style.css' %}">
+</head>
+<body class="bg-dark text-light">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark custom-navbar mb-4">
+        <div class="container">
+            <a class="navbar-brand brand-title" href="http://127.0.0.1:8000/">INFERNO</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="http://127.0.0.1:8000/">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/historia/">Historia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/desarrollo/">Desarrollo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/contacto/">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contenido Principal: Contacto -->
+    <section class="py-4">
+        <div class="container">
+            
+            <!-- Título de la Sección -->
+            <div class="text-center mb-5">
+                <h1 class="section-title text-uppercase">Equipo & Contacto</h1>
+                <div class="divider mx-auto"></div>
+                <p class="text-muted mt-2">Conoce a los creadores de INFERNO y ponte en contacto con nosotros</p>
+            </div>
+
+            <!-- 👥 INTEGRANTES -->
+            <div class="row g-4 mb-5 justify-content-center">
+                
+                <!-- Integrante 1 -->
+                <div class="col-md-4 col-sm-6">
+                    <div class="card bg-dark border-secondary h-100 text-center text-light shadow team-card">
+                        <div class="card-body d-flex flex-column align-items-center">
+                            <div class="avatar-placeholder rounded-circle mb-3 bg-secondary d-flex align-items-center justify-content-center text-warning fs-3 fw-bold">
+                                👨‍💻
+                            </div>
+                            <h5 class="card-title text-warning mb-1">ivan leguizamon</h5>
+                            <p class="badge bg-danger mb-3">Programación</p>
+                            <p class="card-text small text-muted">Desarrollo de mecánicas, lógica del juego y sistemas de guardado en C# / Unity.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Integrante 2 -->
+                <div class="col-md-4 col-sm-6">
+                    <div class="card bg-dark border-secondary h-100 text-center text-light shadow team-card">
+                        <div class="card-body d-flex flex-column align-items-center">
+                            <div class="avatar-placeholder rounded-circle mb-3 bg-secondary d-flex align-items-center justify-content-center text-warning fs-3 fw-bold">
+                                🎨
+                            </div>
+                            <h5 class="card-title text-warning mb-1">leguizamon ivan</h5>
+                            <p class="badge bg-danger mb-3">Diseño & Arte</p>
+                            <p class="card-text small text-muted">Creación de concept art, bocetos de Dante, diseño de escenarios e interfaz.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Integrante 3 -->
+                <div class="col-md-4 col-sm-6">
+                    <div class="card bg-dark border-secondary h-100 text-center text-light shadow team-card">
+                        <div class="card-body d-flex flex-column align-items-center">
+                            <div class="avatar-placeholder rounded-circle mb-3 bg-secondary d-flex align-items-center justify-content-center text-warning fs-3 fw-bold">
+                                📝
+                            </div>
+                            <h5 class="card-title text-warning mb-1">cosoloco</h5>
+                            <p class="badge bg-danger mb-3">Documentación & Web</p>
+                            <p class="card-text small text-muted">Redacción de documentos de diseño de juego (GDD) y desarrollo de la landing page.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- 📩 BOTONES DE REDES Y CONTACTO -->
+            <div class="p-4 rounded bg-black border border-danger-subtle text-center max-w-700 mx-auto">
+                <h4 class="text-warning mb-3">¿Quieres saber más sobre el proyecto?</h4>
+                <p class="text-muted mb-4">Sigue de cerca la evolución del juego o escríbenos directamente:</p>
+
+                <div class="d-flex flex-wrap justify-content-center gap-3">
+                    <a href="https://github.com" target="_blank" class="btn btn-outline-light px-4 py-2">
+                        💻 GitHub
+                    </a>
+                    <a href="https://instagram.com" target="_blank" class="btn btn-outline-danger px-4 py-2">
+                        📸 Instagram
+                    </a>
+                    <a href="mailto:elinfierno_cosolox@hotmail.com" class="btn btn-hero px-4 py-2">
+                        ✉️ Enviar Correo
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Bootstrap 5 JavaScript Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,173 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INFERNO - Desarrollo del Videojuego</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;900&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- CSS Personalizado -->
+    <link rel="stylesheet" href="{% static 'appcosoloco/recursos/style.css' %}">
+</head>
+<body class="bg-dark text-light">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark custom-navbar mb-4">
+        <div class="container">
+            <a class="navbar-brand brand-title" href="http://127.0.0.1:8000/">INFERNO</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="http://127.0.0.1:8000/">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/historia/">Historia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/desarrollo/">Desarrollo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contacto/">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contenido Principal: Desarrollo -->
+    <section class="py-4">
+        <div class="container">
+            
+            <!-- Título de la Sección -->
+            <div class="text-center mb-5">
+                <h1 class="section-title text-uppercase">Desarrollo del Videojuego</h1>
+                <div class="divider mx-auto"></div>
+                <p class="text-muted mt-2">Detrás de escena: la creación del viaje a través del Infierno</p>
+            </div>
+
+            <!-- 🎨 1. DISEÑO -->
+            <div class="mb-5">
+                <h2 class="dev-subtitle mb-4">🎨 Diseño & Arte</h2>
+                <div class="row g-4 justify-content-center">
+                    <div class="col-md-3 col-6">
+                        <div class="card bg-dark border-secondary h-100 text-center text-light shadow-sm">
+                            <img src="/static/appcosoloco/recursos/imagenes/bocetos.png" class="card-img-top p-2" alt="Bocetos de Personaje">
+                            <div class="card-body">
+                                <h6 class="card-title text-warning">Bocetos Iniciales</h6>
+                                <p class="card-text small text-muted">Diseños conceptuales de Dante en su forma humana y de cerdo humanoide.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <div class="card bg-dark border-secondary h-100 text-center text-light shadow-sm">
+                            <img src="{% static 'appcosoloco/recursos/enemigos_design.jpg' %}" class="card-img-top p-2" alt="Enemigos">
+                            <div class="card-body">
+                                <h6 class="card-title text-warning">Enemigos</h6>
+                                <p class="card-text small text-muted">Concept art de las criaturas y demonios de cada círculo.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <div class="card bg-dark border-secondary h-100 text-center text-light shadow-sm">
+                            <img src="/static/appcosoloco/recursos/imagenes/hud.png" class="card-img-top p-2" alt="Interfaz">
+                            <div class="card-body">
+                                <h6 class="card-title text-warning">Interfaz / HUD</h6>
+                                <p class="card-text small text-muted">Diseño de la barra de vida, inventario y menús de pausa.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 💻 2. PROGRAMACIÓN -->
+            <div class="mb-5">
+                <h2 class="dev-subtitle mb-4">💻 Programación & Arquitectura</h2>
+                <div class="p-4 rounded bg-black border border-danger-subtle shadow">
+                    <p class="mb-3">
+                        El videojuego fue desarrollado en el motor <strong>Unity 6</strong> utilizando el lenguaje <strong>C#</strong>. Nos enfocamos en crear mecánicas sólidas y modulares para garantizar una jugabilidad fluida.
+                    </p>
+                    <div class="row g-3">
+                        <div class="col-md-4">
+                            <ul class="list-group list-group-flush rounded border-secondary">
+                                <li class="list-group-item bg-dark text-light border-secondary">🏃 <strong>Movimiento del Personaje</strong></li>
+                                <li class="list-group-item bg-dark text-light border-secondary">💬 <strong>Sistema de Diálogos</strong></li>
+                                <li class="list-group-item bg-dark text-light border-secondary">⚔️ <strong>Sistema de Combate</strong></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4">
+                            <ul class="list-group list-group-flush rounded border-secondary">
+                                <li class="list-group-item bg-dark text-light border-secondary">🎒 <strong>Sistema de Inventario</strong></li>
+                                <li class="list-group-item bg-dark text-light border-secondary">💾 <strong>Sistema de Guardado</strong></li>
+                                <li class="list-group-item bg-dark text-light border-secondary">⚙️ <strong>Menús e Interfaz</strong></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4 d-flex align-items-center justify-content-center">
+                            <div class="p-3 text-center border border-warning rounded bg-dark w-100">
+                                <h6 class="text-warning mb-2">Tecnologías Principales</h6>
+                                <span class="badge bg-danger me-1">Unity 6</span>
+                                <span class="badge bg-secondary me-1">C#</span>
+                                <span class="badge bg-dark border border-light">Git / GitHub</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 🎮 3. PRUEBAS -->
+            <div class="mb-5">
+                <h2 class="dev-subtitle mb-4">🎮 Pruebas (Playtesting)</h2>
+                <div class="alert alert-dark border-warning text-light shadow-sm">
+                    <h5 class="alert-heading text-warning">Detección de fallos y pruebas de usuario</h5>
+                    <p class="mb-0">
+                        Durante el desarrollo tuvimos problemas con el sistema de inventario y el guardado de objetos. Se realizaron varias pruebas hasta conseguir que los elementos se mantuvieran correctamente al reiniciar niveles o cambiar de escena.
+                    </p>
+                </div>
+            </div>
+
+            <!-- 🔧 4. CORRECCIONES -->
+            <div class="mb-4">
+                <h2 class="dev-subtitle mb-4">🔧 Correcciones</h2>
+                <div class="table-responsive">
+                    <table class="table table-dark table-striped table-bordered align-middle">
+                        <thead class="table-danger">
+                            <tr>
+                                <th scope="col" style="width: 50%;">❌ Problema Identificado</th>
+                                <th scope="col" style="width: 50%;">✅ Solución Aplicada</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>El personaje atravesaba ciertas paredes al colisionar.</td>
+                                <td>Se modificaron y reajustaron los componentes <code>Collider2D</code>.</td>
+                            </tr>
+                            <tr>
+                                <td>Los objetos desaparecían al cargar una partida guardada.</td>
+                                <td>Se reestructuró la persistencia de datos mediante guardado de IDs en JSON.</td>
+                            </tr>
+                            <tr>
+                                <td>errores en las animaciones del jugador/tamaño de sprites y tilemaps</td>
+                                <td>se comenzo nuevamente todo el proyecto sin usar IA para crear la parte visual </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Bootstrap 5 JavaScript Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

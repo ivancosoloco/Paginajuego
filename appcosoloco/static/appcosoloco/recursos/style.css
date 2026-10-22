@@ -1,0 +1,397 @@
+
+:root {
+    --color-principal: #8b0000;    
+    --color-acento: #ff4500;       
+    --color-dorado: #d4af37;       
+    --color-oscuro: #0a0a0a;       
+    --fuente-titulo: 'Cinzel', serif;
+    --fuente-texto: 'Montserrat', sans-serif;
+}
+
+body {
+    font-family: var(--fuente-texto);
+    background-color: var(--color-oscuro);
+    color: #e0e0e0;
+    overflow-x: hidden;
+}
+
+/* NAVBAR */
+.custom-navbar {
+    background-color: rgba(10, 10, 10, 0.85);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid rgba(139, 0, 0, 0.4);
+    transition: all 0.3s ease;
+}
+
+.brand-title {
+    font-family: var(--fuente-titulo);
+    font-size: 1.8rem;
+    font-weight: 900;
+    color: var(--color-dorado) !important;
+    letter-spacing: 2px;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #cccccc;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    margin-left: 1rem;
+    transition: color 0.3s ease;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link.active {
+    color: var(--color-acento) !important;
+}
+
+
+.hero-section {
+    position: relative;
+    min-height: 100vh;
+    /* Imagen de fondo del juego (coloca tu imagen en /static/appcosoloco/recursos/dante_portada.jpg) */
+    background: url('dante_portada.jpg') no-repeat center center/cover;
+    background-attachment: fixed;
+}
+
+/*  CAPA SupeRPiuesta */
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        180deg, 
+        rgba(10, 10, 10, 0.7) 0%, 
+        rgba(139, 0, 0, 0.3) 50%, 
+        rgba(10, 10, 10, 0.95) 100%
+    );
+}
+
+.hero-content {
+    z-index: 2;
+    padding-top: 5rem;
+}
+
+.hero-title {
+    font-family: var(--fuente-titulo);
+    font-size: calc(3.5rem + 2.5vw);
+    font-weight: 900;
+    color: var(--color-dorado);
+    text-shadow: 0 0 20px rgba(139, 0, 0, 0.8), 0 0 10px rgba(0, 0, 0, 0.9);
+    letter-spacing: 6px;
+}
+
+.hero-subtitle {
+    font-family: var(--fuente-titulo);
+    font-size: calc(1.1rem + 0.5vw);
+    color: var(--color-acento);
+    letter-spacing: 3px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.hero-description {
+    max-width: 680px;
+    font-size: 1.15rem;
+    line-height: 1.7;
+    color: #d1d1d1;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.9);
+}
+
+
+.btn-hero {
+    background-color: var(--color-principal);
+    color: #ffffff;
+    border: 2px solid var(--color-dorado);
+    font-family: var(--fuente-titulo);
+    letter-spacing: 2px;
+    border-radius: 4px;
+    box-shadow: 0 0 15px rgba(139, 0, 0, 0.6);
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-hero:hover {
+    background-color: var(--color-acento);
+    border-color: #ffffff;
+    color: #ffffff;
+    box-shadow: 0 0 25px rgba(255, 69, 0, 0.9);
+    transform: translateY(-3px);
+}
+
+.bg-dark-gradient {
+    background: linear-gradient(180deg, #0a0a0a 0%, #1a0505 50%, #0a0a0a 100%);
+}
+
+.section-title {
+    font-family: var(--fuente-titulo);
+    font-size: 2.5rem;
+    color: var(--color-dorado);
+    letter-spacing: 3px;
+}
+
+.divider {
+    width: 80px;
+    height: 3px;
+    background-color: var(--color-principal);
+    margin-top: 10px;
+}
+
+.story-heading {
+    font-family: var(--fuente-titulo);
+    font-size: 1.5rem;
+    border-left: 3px solid var(--color-acento);
+    padding-left: 10px;
+}
+
+.story-text {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: #cccccc;
+}
+
+.story-image-container img {
+    border: 1px solid rgba(212, 175, 55, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.story-image-container img:hover {
+    transform: scale(1.02);
+}
+
+.image-caption {
+    background-color: rgba(0, 0, 0, 0.7);
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: var(--color-principal) !important;
+    color: #ffffff !important;
+}
+
+:root {
+    --color-principal: #8b0000;    /* Rojo Infierno */
+    --color-acento: #ff4500;       /* Naranja fuego */
+    --color-dorado: #d4af37;       /* Dorado medieval */
+    --color-oscuro: #0a0a0a;       /* Fondo casi negro */
+    --fuente-titulo: 'Cinzel', serif;
+    --fuente-texto: 'Montserrat', sans-serif;
+}
+
+body {
+    font-family: var(--fuente-texto);
+    background-color: var(--color-oscuro);
+    color: #e0e0e0;
+    overflow-x: hidden;
+}
+
+.bg-dark-gradient {
+    background: linear-gradient(180deg, #0a0a0a 0%, #1a0505 50%, #0a0a0a 100%);
+}
+
+.section-title {
+    font-family: var(--fuente-titulo);
+    font-size: 2.5rem;
+    color: var(--color-dorado);
+    letter-spacing: 3px;
+}
+
+.divider {
+    width: 80px;
+    height: 3px;
+    background-color: var(--color-principal);
+    margin-top: 10px;
+}
+
+/* NAVBAR */
+.custom-navbar {
+    background-color: rgba(10, 10, 10, 0.85);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-bottom: 1px solid rgba(139, 0, 0, 0.4);
+    transition: all 0.3s ease;
+}
+
+.brand-title {
+    font-family: var(--fuente-titulo);
+    font-size: 1.8rem;
+    font-weight: 900;
+    color: var(--color-dorado) !important;
+    letter-spacing: 2px;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #cccccc;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    margin-left: 1rem;
+    transition: color 0.3s ease;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link.active {
+    color: var(--color-acento) !important;
+}
+
+/* INICIO */
+.hero-section {
+    position: relative;
+    min-height: 100vh;
+    background: url('dante_portada.jpg') no-repeat center center/cover;
+    background-attachment: fixed;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        180deg, 
+        rgba(10, 10, 10, 0.7) 0%, 
+        rgba(139, 0, 0, 0.3) 50%, 
+        rgba(10, 10, 10, 0.95) 100%
+    );
+}
+
+.hero-content {
+    z-index: 2;
+    padding-top: 5rem;
+}
+
+.hero-title {
+    font-family: var(--fuente-titulo);
+    font-size: calc(3.5rem + 2.5vw);
+    font-weight: 900;
+    color: var(--color-dorado);
+    text-shadow: 0 0 20px rgba(139, 0, 0, 0.8), 0 0 10px rgba(0, 0, 0, 0.9);
+    letter-spacing: 6px;
+}
+
+.hero-subtitle {
+    font-family: var(--fuente-titulo);
+    font-size: calc(1.1rem + 0.5vw);
+    color: var(--color-acento);
+    letter-spacing: 3px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.hero-description {
+    max-width: 680px;
+    font-size: 1.15rem;
+    line-height: 1.7;
+    color: #d1d1d1;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.9);
+}
+
+.btn-hero {
+    background-color: var(--color-principal);
+    color: #ffffff;
+    border: 2px solid var(--color-dorado);
+    font-family: var(--fuente-titulo);
+    letter-spacing: 2px;
+    border-radius: 4px;
+    box-shadow: 0 0 15px rgba(139, 0, 0, 0.6);
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-hero:hover {
+    background-color: var(--color-acento);
+    border-color: #ffffff;
+    color: #ffffff;
+    box-shadow: 0 0 25px rgba(255, 69, 0, 0.9);
+    transform: translateY(-3px);
+}
+
+/* HIstoria */
+.story-heading {
+    font-family: var(--fuente-titulo);
+    font-size: 1.5rem;
+    border-left: 3px solid var(--color-acento);
+    padding-left: 10px;
+}
+
+.story-text {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: #cccccc;
+}
+
+.story-image-container img {
+    border: 1px solid rgba(212, 175, 55, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.story-image-container img:hover {
+    transform: scale(1.02);
+}
+
+.image-caption {
+    background-color: rgba(0, 0, 0, 0.7);
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: var(--color-principal) !important;
+    color: #ffffff !important;
+}
+
+/* Desarrollo */
+.dev-subtitle {
+    font-family: var(--fuente-titulo);
+    color: var(--color-dorado);
+    font-size: 1.6rem;
+    border-bottom: 2px solid var(--color-principal);
+    padding-bottom: 5px;
+    display: inline-block;
+}
+
+.card-img-top {
+    height: 140px;
+    object-fit: contain;
+    background-color: #111;
+}
+
+.table-dark {
+    --bs-table-bg: #121212;
+    border-color: rgba(139, 0, 0, 0.4);
+}
+
+.table-danger {
+    --bs-table-bg: #8b0000;
+    --bs-table-color: #ffffff;
+}
+
+code {
+    color: var(--color-acento);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 2px 6px;
+    border-radius: 4px;
+}
+
+/* CONTACTO */
+
+.team-card {
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.team-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--color-acento) !important;
+}
+
+.avatar-placeholder {
+    width: 80px;
+    height: 80px;
+    border: 2px solid var(--color-dorado);
+}
+
+.max-w-700 {
+    max-width: 700px;
+}
