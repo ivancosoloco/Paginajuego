@@ -171,6 +171,98 @@ body {
     color: #ffffff !important;
 }
 
+.login-page {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    padding: 1.5rem;
+    background:
+        radial-gradient(ellipse at top, rgba(139, 0, 0, 0.35), transparent 55%),
+        var(--color-oscuro);
+}
+
+.login-card {
+    width: min(100%, 430px);
+    padding: 2.5rem;
+    border: 1px solid rgba(212, 175, 55, 0.55);
+    border-radius: 8px;
+    background: rgba(10, 10, 10, 0.94);
+    box-shadow: 0 20px 70px rgba(0, 0, 0, 0.65);
+}
+
+.login-eyebrow {
+    margin-bottom: 0.5rem;
+    color: var(--color-acento);
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.login-title {
+    margin-bottom: 0.5rem;
+    color: var(--color-dorado);
+    font-family: var(--fuente-titulo);
+    font-size: 2.8rem;
+    font-weight: 900;
+    letter-spacing: 4px;
+    text-align: center;
+}
+
+.login-description {
+    margin-bottom: 2rem;
+    color: #cccccc;
+    text-align: center;
+}
+
+.login-card label {
+    display: block;
+    margin: 1rem 0 0.4rem;
+    color: #e0e0e0;
+    font-weight: 600;
+}
+
+.login-card input {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #555;
+    border-radius: 4px;
+    background: #171717;
+    color: #fff;
+}
+
+.login-card input:focus {
+    border-color: var(--color-dorado);
+    outline: 2px solid rgba(212, 175, 55, 0.2);
+}
+
+.login-card button {
+    width: 100%;
+    margin-top: 1.5rem;
+    padding: 0.85rem;
+    border: 1px solid var(--color-dorado);
+    border-radius: 4px;
+    background: var(--color-principal);
+    color: #fff;
+    font-family: var(--fuente-titulo);
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.login-card button:hover {
+    background: var(--color-acento);
+}
+
+.login-error {
+    padding: 0.75rem;
+    border: 1px solid #a33;
+    border-radius: 4px;
+    background: rgba(139, 0, 0, 0.2);
+    color: #ffb3b3;
+}
+
 :root {
     --color-principal: #8b0000;    /* Rojo Infierno */
     --color-acento: #ff4500;       /* Naranja fuego */

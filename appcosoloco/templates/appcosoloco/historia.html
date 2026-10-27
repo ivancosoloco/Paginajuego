@@ -33,6 +33,13 @@
                     <li class="nav-item"><a class="nav-link" href="/desarrollo/">Desarrollo</a></li>
                     <li class="nav-item"><a class="nav-link" href="/contacto/">Contacto</a></li>
                 </ul>
+                <div class="navbar-text d-flex align-items-center gap-3">
+                    <span>{{ request.user.username }}</span>
+                    <form method="post" action="{% url 'logout' %}" class="m-0">
+                        {% csrf_token %}
+                        <button class="btn btn-outline-warning btn-sm" type="submit">Cerrar sesión</button>
+                    </form>
+                </div>
             </div>
         </div>
     </nav>

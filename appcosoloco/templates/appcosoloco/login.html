@@ -1,0 +1,33 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar sesión | INFERNO</title>
+    <link rel="stylesheet" href="{% static 'appcosoloco/recursos/style.css' %}">
+</head>
+<body class="login-page">
+    <main class="login-card">
+        <p class="login-eyebrow">Acceso restringido</p>
+        <h1 class="login-title">INFERNO</h1>
+        <p class="login-description">Inicia sesión para entrar al sitio del juego.</p>
+
+        {% if form.errors %}
+            <p class="login-error" role="alert">Usuario o contraseña incorrectos. Inténtalo de nuevo.</p>
+        {% endif %}
+
+        <form method="post">
+            {% csrf_token %}
+            <input type="hidden" name="next" value="{{ next }}">
+            <label for="id_username">Usuario</label>
+            <input id="id_username" name="username" type="text" autocomplete="username" required autofocus>
+
+            <label for="id_password">Contraseña</label>
+            <input id="id_password" name="password" type="password" autocomplete="current-password" required>
+
+            <button type="submit">Entrar</button>
+        </form>
+    </main>
+</body>
+</html>
